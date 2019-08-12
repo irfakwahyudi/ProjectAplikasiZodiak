@@ -1,0 +1,5 @@
+<resources>
+        <string name="app_name">Aplikasi Zodiak</string>
+        <string name="zodiak_name">Nama Zodiak</string>
+        <string name="date">Tanggal</string>
+</resources>
