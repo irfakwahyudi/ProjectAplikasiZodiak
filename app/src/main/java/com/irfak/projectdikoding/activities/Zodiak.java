@@ -1,4 +1,4 @@
-package com.irfak.projectdikoding;
+package com.irfak.projectdikoding.activities;
 
 public class Zodiak {
     private String name;
@@ -9,23 +9,23 @@ public class Zodiak {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public static void setName(String name) {
+        name = name;
     }
 
     public String getDate() {
         return date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public static void setDate(String date) {
+        date = date;
     }
 
     public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public static void setPhoto(String photo) {
+        photo = photo;
     }
 }

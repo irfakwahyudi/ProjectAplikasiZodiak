@@ -1,4 +1,6 @@
-package com.irfak.projectdikoding;
+package com.irfak.projectdikoding.activities;
+
+import java.util.ArrayList;
 
 public class ZodiakData {
     public static String[][] data = new String[][]{
@@ -15,14 +17,14 @@ public class ZodiakData {
             {"Sagitarius"," 22 November - 21 Desember","https://2.bp.blogspot.com/-71j5P09hP28/W4K_eK882MI/AAAAAAAATWg/MdqQB1FDYmQku549JQzRyWIn2qEtVLbTQCEwYBhgL/s1600/zodiak%2Bsagitarius.JPG"},
             {"Capricorn","22 Desember - 20 Januari","https://2.bp.blogspot.com/-O84MpfcFdUY/W4K_chjKZeI/AAAAAAAATW4/TXp1xy9jQSg95qa5ZZPK_I6w7PqcQeBlwCEwYBhgL/s1600/zodiak%2Bcapricorn.JPG"}
     };
-    public static ArrayList<Hero> getListData(){
-        ArrayList<Hero> list = new ArrayList<>();
+    public static ArrayList<Zodiak> getListData(){
+        ArrayList<Zodiak> list = new ArrayList<>();
         for (String[] aData : data) {
-            Hero hero = new Hero();
-            hero.setName(aData[0]);
-            hero.setFrom(aData[1]);
-            hero.setPhoto(aData[2]);
-            list.add(hero);
+            Zodiak zodiak = new Zodiak();
+            Zodiak.setName(aData[0]);
+            Zodiak.setDate(aData[1]);
+            Zodiak.setPhoto(aData[2]);
+            list.add(zodiak);
         }
         return list;
     }
