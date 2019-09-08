@@ -24,7 +24,7 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_zodiak_detail, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_row_zodiak, viewGroup, false);
         return new ListViewHolder(view);
     }
 
@@ -36,7 +36,7 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
                 .apply(new RequestOptions().override(55, 55))
                 .into(holder.imgPhoto);
         holder.tvName.setText(Zodiak.getName());
-        holder.tvFrom.setText(Zodiak.getDate());
+        holder.tvDate.setText(Zodiak.getDate());
     }
 
     @Override
@@ -46,13 +46,13 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
-        TextView tvName, tvFrom;
+        TextView tvName, tvDate;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgPhoto = itemView.findViewById(R.id.img_item_photo);
-            tvName = itemView.findViewById(R.id.tv_item_name);
-            tvFrom = itemView.findViewById(R.id.tv_item_from);
+            imgPhoto = itemView.findViewById(R.id.ImageView);
+            tvName = itemView.findViewById(R.id.TextViewName);
+            tvDate = itemView.findViewById(R.id.TextViewDate);
         }
     }
 }
