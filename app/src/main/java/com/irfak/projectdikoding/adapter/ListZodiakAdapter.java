@@ -33,7 +33,7 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
         Zodiak Zodiak = listZodiak.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(Zodiak.getPhoto())
-                .apply(new RequestOptions().override(70, 70))
+                .apply(new RequestOptions().override(50, 50))
                 .into(holder.imgPhoto);
         holder.tvName.setText(Zodiak.getName());
         holder.tvDate.setText(Zodiak.getDate());

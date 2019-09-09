@@ -10,8 +10,8 @@
 
         <ImageView
             android:id="@+id/ImageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:src="@drawable/ic_launcher_foreground"
             android:layout_margin="20dp"
             android:padding="4dp"/>
