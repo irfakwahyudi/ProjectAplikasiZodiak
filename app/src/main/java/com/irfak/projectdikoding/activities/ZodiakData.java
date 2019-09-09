@@ -35,11 +35,11 @@ public class ZodiakData {
     };
     static ArrayList<Zodiak> getListData() {
         ArrayList <Zodiak> list = new ArrayList<>();
-        for (int position = 0; position < zodiakName.length; position++) {
+        for (int posisi = 0; posisi < zodiakName.length; posisi++) {
             Zodiak hero = new Zodiak();
-            hero.setName(zodiakName[position]);
-            hero.setDate(zodiakDate[position]);
-            hero.setPhoto(zodiakImage[position]);
+            hero.setName(zodiakName[posisi]);
+            hero.setDate(zodiakDate[posisi]);
+            hero.setPhoto(zodiakImage[posisi]);
             list.add(hero);
         }
         return list;

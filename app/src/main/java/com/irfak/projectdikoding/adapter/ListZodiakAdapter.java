@@ -24,7 +24,7 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_row_zodiak, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_zodiak_list_item, viewGroup, false);
         return new ListViewHolder(view);
     }
 
@@ -33,7 +33,7 @@ public class ListZodiakAdapter extends RecyclerView.Adapter<ListZodiakAdapter.Li
         Zodiak Zodiak = listZodiak.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(Zodiak.getPhoto())
-                .apply(new RequestOptions().override(55, 55))
+                .apply(new RequestOptions().override(70, 70))
                 .into(holder.imgPhoto);
         holder.tvName.setText(Zodiak.getName());
         holder.tvDate.setText(Zodiak.getDate());
