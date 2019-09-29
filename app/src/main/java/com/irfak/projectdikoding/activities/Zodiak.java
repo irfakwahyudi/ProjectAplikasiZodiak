@@ -4,6 +4,36 @@ public class Zodiak {
     private String name;
     private String date;
     private String photo;
+    private String elemen;
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    private String deskripsi;
+
+    public String getSimbol() {
+        return simbol;
+    }
+
+    public void setSimbol(String simbol) {
+        this.simbol = simbol;
+    }
+
+    private String simbol;
+
+    public String getElemen() {
+        return elemen;
+    }
+
+    public void setElemen(String elemen) {
+        this.elemen = elemen;
+    }
+
 
     public String getName() {
         return name;

@@ -33,14 +33,24 @@ public class ZodiakData {
         "https://2.bp.blogspot.com/-71j5P09hP28/W4K_eK882MI/AAAAAAAATWg/MdqQB1FDYmQku549JQzRyWIn2qEtVLbTQCEwYBhgL/s1600/zodiak%2Bsagitarius.JPG",
         "https://2.bp.blogspot.com/-O84MpfcFdUY/W4K_chjKZeI/AAAAAAAATW4/TXp1xy9jQSg95qa5ZZPK_I6w7PqcQeBlwCEwYBhgL/s1600/zodiak%2Bcapricorn.JPG"
     };
+    public static String[] zodiakElemen = {
+            "Api","Air","Tanah", "Angin", "Kayu", "Petir", "Kabut", "Gempa", "Topan", "Halilintar", "Cahaya", "Batu"
+    };
+    public static String[] zodiakSimbol = {
+            "Cinta", "Keadilan", "Asmara", "Kemakmuran", "Kesetiaan", "Keberanian", "Kekuatan", "Kebencian",
+            "Kekeluargaan", "Kegelapan", "Kekesalan", "Kedamaian"
+    };
+    public static String[] zodiakDeskripsi = {
+            "Haha", "Hihi", "Huhu", "Hehe", "Hoho", "Papa", "Pipi", "Pupu", "Tata", "Tutu", "Lala", "Lili"
+    };
     static ArrayList<Zodiak> getListData() {
         ArrayList <Zodiak> list = new ArrayList<>();
         for (int posisi = 0; posisi < zodiakName.length; posisi++) {
-            Zodiak hero = new Zodiak();
-            hero.setName(zodiakName[posisi]);
-            hero.setDate(zodiakDate[posisi]);
-            hero.setPhoto(zodiakImage[posisi]);
-            list.add(hero);
+            Zodiak zodiak = new Zodiak();
+            zodiak.setName(zodiakName[posisi]);
+            zodiak.setDate(zodiakDate[posisi]);
+            zodiak.setPhoto(zodiakImage[posisi]);
+            list.add(zodiak);
         }
         return list;
     }
